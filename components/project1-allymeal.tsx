@@ -31,14 +31,13 @@ export default function Project1() {
           fill
           className="object-cover"
         />
-        {/* <div className="bg-primary absolute inset-0 z-10 opacity-50 mix-blend-color" /> */}
       </div>
       <CardHeader>
         <CardTitle>AllyMeal</CardTitle>
-        <CardDescription>
-          Une application mobile Android (et iOS dans le futur) qui permet de
-          compter les calories et autres macros de ses repas et recettes, et ce
-          pour plusieurs membres du foyer !
+        <CardDescription className=" min-h-20">
+          Une application mobile Android (et iOS bientôt) qui permet de compter
+          les calories et autres macros de ses repas et recettes, et ce pour
+          plusieurs membres du foyer !
         </CardDescription>
       </CardHeader>
       <CardFooter>
@@ -48,9 +47,6 @@ export default function Project1() {
           </AlertDialogTrigger>
           <AlertDialogContent size="sm">
             <AlertDialogHeader>
-              {/* <AlertDialogMedia>
-                  <SearchCode />
-                </AlertDialogMedia> */}
               <AlertDialogTitle className="mt-4">
                 Pourquoi ce projet ?
               </AlertDialogTitle>

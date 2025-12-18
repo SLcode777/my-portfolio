@@ -1,10 +1,11 @@
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
+import { siteConfig } from "@/site.config";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { siteConfig } from "@/site.config";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
           <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             {children}
           </main>
+          <Toaster />
           <Footer />
         </ThemeProvider>
       </body>

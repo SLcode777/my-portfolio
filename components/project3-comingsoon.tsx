@@ -21,25 +21,22 @@ import {
   CardTitle,
 } from "./ui/card";
 
-export default function Project2() {
+export default function Project3() {
   return (
     <Card className="relative w-full max-w-sm overflow-hidden pt-0">
       <div className="relative w-full h-48 overflow-hidden">
         <Image
-          src="/img/blog.png"
-          alt="Project2"
+          src="/img/coming-soon.png"
+          alt="Project3"
           fill
           className="object-cover"
         />
         {/* <div className="bg-primary absolute inset-0 z-10 opacity-50 mix-blend-color" /> */}
       </div>
       <CardHeader>
-        <CardTitle>Mon Blog</CardTitle>
+        <CardTitle>En construction</CardTitle>
         <CardDescription className=" min-h-20">
-          Un blog que j&apos;alimente depuis fin 2023 suite à ma décision de me
-          reconvertir. J&apos;y documente mon parcours d&apos;apprentie
-          developpeuse autodidacte et y partage mes succès et mes échecs, sans
-          filtre.
+          🚧 Projet en cours de construction 🚧
         </CardDescription>
       </CardHeader>
       <CardFooter>
@@ -56,28 +53,21 @@ export default function Project2() {
                 Pourquoi ce projet ?
               </AlertDialogTitle>
               <AlertDialogDescription className="text-start">
-                <span>
-                  A l&apos;origine, le but était de me rendre
-                  &quot;accountable&quot;. Annoncer ses objectifs en public te
-                  pousse à rester focus et à les réaliser. Ca permet aussi de se
-                  poser, de prendre du recul et de tout mettre à plat. Enfin, ça
-                  permet d&apos;échanger avec d&apos;autres devs de tous niveaux
-                  et tous horizons, c&apos;est très enrichissant !
-                </span>
+                <span>Mystère !</span>
               </AlertDialogDescription>
               <div className="mt-4 flex flex-col w-full">
                 <div className="text-sm font-semibold">Défis techniques</div>
                 <div className="text-xs text-muted-foreground mt-2 text-start">
                   <span className="text-sidebar-primary">
-                    .Affichage de contenu dynamique
+                    .trouver le temps
                   </span>{" "}
-                  (non c&apos;est facile en vrai :p)
+                  de travailler dessus !
                 </div>
               </div>
               <div className="mt-4 flex flex-col w-full">
                 <div className="text-sm font-semibold">Stack technique</div>
                 <div className="text-xs text-muted-foreground mt-2 text-start">
-                  Next.js, React, TypeScript, Resend.
+                  Next.js, React, TypeScript.
                 </div>
               </div>
             </AlertDialogHeader>
@@ -85,9 +75,9 @@ export default function Project2() {
               <AlertDialogCancel className="hover:cursor-pointer">
                 Fermer
               </AlertDialogCancel>
-              <AlertDialogAction>
-                <Link href={"https://sl-code.dev"} target="_blank">
-                  Voir le site
+              <AlertDialogAction disabled>
+                <Link href="" target="_blank">
+                  Voir le projet
                 </Link>
               </AlertDialogAction>
             </AlertDialogFooter>

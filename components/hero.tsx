@@ -2,18 +2,26 @@
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useState } from "react";
 import { GitHubCalendar } from "react-github-calendar";
 import { Card, CardContent } from "./ui/card";
 
+type Activity = {
+  date: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+};
+
 export default function Hero() {
   const { theme } = useTheme();
+  const [totalCount, setTotalCount] = useState(0);
 
-  const selectNineLastMonths = (contributions) => {
+  const selectNineLastMonths = (contributions: Activity[]) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
     const shownMonths = 9;
 
-    return contributions.filter((activity) => {
+    const filtered = contributions.filter((activity) => {
       const date = new Date(activity.date);
       const monthOfDay = date.getMonth();
 
@@ -23,6 +31,16 @@ export default function Hero() {
         monthOfDay <= currentMonth
       );
     });
+
+    //calculer le total de contributions pour ma custom div (pour pouvoir faire un hover reveal sur le text)
+    const total = filtered.reduce((sum, activity) => sum + activity.count, 0);
+
+    // Mise à jour asynchrone pour éviter l'erreur "Cannot update during render"
+    queueMicrotask(() => {
+      setTotalCount(total);
+    });
+
+    return filtered;
   };
 
   return (
@@ -36,19 +54,19 @@ export default function Hero() {
           <p className="font-bold text-lg lg:text-2xl text-muted-foreground text-pretty">
             Développeuse web & mobile en Freelance
           </p>
-          <div className="mt-4 max-w-fit hover:blur-none blur-xs hidden lg:block ">
+          <div className="mt-4 max-w-fit group hover:blur-none blur-xs hidden lg:block ">
             <GitHubCalendar
               username="slcode777"
               showMonthLabels={false}
-              showTotalCount={true}
+              showTotalCount={false}
               showColorLegend={false}
               loading={false}
               colorScheme={theme === "dark" ? "dark" : "light"}
               transformData={selectNineLastMonths}
-              labels={{
-                totalCount: "{{count}} contributions sur les 9 derniers mois",
-              }}
             />
+            <div className="mt-2 text-sm text-card opacity-0 group-hover:opacity-100 group-hover:text-muted-foreground transition-all duration-500 ease-in-out">
+              {totalCount} contributions sur les 9 derniers mois
+            </div>
           </div>
         </div>
         <Image
