@@ -15,6 +15,26 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [
+      {
+        url: "/og-img.png",
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ["/og-img.png"],
+  },
 };
 
 export default function RootLayout({
