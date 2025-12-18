@@ -16,15 +16,21 @@ export default function AboutMe() {
               2023, pour mon plus grand bonheur.
             </p>
             <p>
-              Depuis 2 ans déjà, ma curiosité et mon enthousiasme me poussent à
-              explorer le métier de développeur et ses multiples facettes et je
-              viens d&apos;achever, non sans fierté, mon premier projet
-              d&apos;envergure, une véritable application mobile, bientôt
-              disponible sur le PlayStore !{" "}
+              Les points forts qui faisaient de moi une bonne comptable sont les
+              mêmes qui feront de moi une bonne développeuse : logique, rigueur,
+              plannification, curiosité, sens de l&apos;observation, etc...{" "}
+            </p>
+            <p>
+              Depuis 2 ans déjà, ma détermination et mon enthousiasme me portent
+              à travers l&apos;exploration du métier de développeur et de ses
+              multiples facettes. Et puisque c&apos;est en construisant de vrais
+              projets qu&apos;on apprend le mieux, je viens d&apos;achever, non
+              sans fierté, mon premier projet d&apos;envergure, une véritable
+              application mobile, bientôt disponible sur le PlayStore !{" "}
             </p>
             <div className="flex justify-center mt-4">
               <Button
-                variant={"ghost"}
+                variant={"outline"}
                 className="hover:cursor-pointer hover:text-sidebar-primary"
               >
                 En savoir plus

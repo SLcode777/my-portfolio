@@ -1,5 +1,5 @@
-import { SocialLinks } from "./social-links";
 import { siteConfig } from "@/site.config";
+import { SocialLinks } from "./social-links";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,9 +16,7 @@ export function Footer() {
             <SocialLinks />
           </div>
 
-          <p className="text-xs font-mono text-neutral-500">
-            Built with Next.js
-          </p>
+          <p className="text-xs font-mono text-neutral-500">Built with 💚</p>
         </div>
       </div>
     </footer>

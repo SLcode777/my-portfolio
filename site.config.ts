@@ -1,22 +1,22 @@
 export const siteConfig = {
-  name: "Mon Portfolio",
+  name: "<Stella />",
   description: "Portfolio minimaliste et moderne",
   url: "https://yoursite.com",
   author: {
-    name: "Votre Nom",
-    email: "votre.email@example.com",
+    name: "Stella",
+    email: "sl.code.777@gmail.com",
   },
   social: {
     github: {
-      url: "https://github.com/username",
+      url: "https://github.com/SLcode777",
       icon: "Github",
     },
     x: {
-      url: "https://x.com/username",
+      url: "https://x.com/StellaSLcode",
       icon: "Twitter",
     },
     email: {
-      url: "mailto:votre.email@example.com",
+      url: "mailto:sl.code.777@gmail.com",
       icon: "Mail",
     },
   },

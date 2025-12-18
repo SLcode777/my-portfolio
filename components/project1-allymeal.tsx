@@ -1,6 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@base-ui/react";
-import { PlusIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -14,6 +12,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "./ui/alert-dialog";
+import { Button } from "./ui/button";
 import {
   Card,
   CardDescription,
@@ -45,10 +44,7 @@ export default function Project1() {
       <CardFooter>
         <AlertDialog>
           <AlertDialogTrigger asChild>
-            <Button>
-              <PlusIcon data-icon="inline-start" />
-              Voir les détails
-            </Button>
+            <Button className="hover:cursor-pointer">Voir les détails</Button>
           </AlertDialogTrigger>
           <AlertDialogContent size="sm">
             <AlertDialogHeader>
@@ -98,7 +94,9 @@ export default function Project1() {
               </div>
             </AlertDialogHeader>
             <AlertDialogFooter className="mt-4">
-              <AlertDialogCancel>Fermer</AlertDialogCancel>
+              <AlertDialogCancel className="hover:cursor-pointer">
+                Fermer
+              </AlertDialogCancel>
               <AlertDialogAction>
                 <Link href={"https://allymeal.app"} target="_blank">
                   Voir le site
