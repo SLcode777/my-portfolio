@@ -4,10 +4,10 @@ import Project3 from "./project3-comingsoon";
 
 export default function Projects() {
   return (
-    <div className="mt-16">
+    <div className="mt-16 w-full flex flex-col">
       <p className="font-bold text-4xl mb-8 text-center">Mes réalisations</p>
 
-      <div className="flex flex-col md:flex-row gap-6 md:gap-16 justify-center items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-fit gap-4 self-center">
         {/* Project #1 - AllyMeal */}
         <Project1 />
 

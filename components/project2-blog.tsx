@@ -23,7 +23,7 @@ import {
 
 export default function Project2() {
   return (
-    <Card className="relative w-full max-w-sm overflow-hidden pt-0">
+    <Card className="relative w-xs sm:w-sm  overflow-hidden pt-0">
       <div className="relative w-full h-48 overflow-hidden">
         <Image
           src="/img/blog.png"
