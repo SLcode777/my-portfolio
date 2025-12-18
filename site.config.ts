@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "<Stella />",
-  description: "Portfolio minimaliste et moderne",
+  description: "Développeuse web & mobile",
   url: "https://yoursite.com",
   author: {
     name: "Stella",

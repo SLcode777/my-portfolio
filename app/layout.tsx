@@ -43,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={jetbrainsMono.variable} suppressHydrationWarning>
+    <html lang="fr" className={jetbrainsMono.variable} suppressHydrationWarning>
       <body className="min-h-screen flex flex-col antialiased">
         <ThemeProvider
           attribute="class"
