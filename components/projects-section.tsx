@@ -1,6 +1,6 @@
 import Project1 from "./project1-allymeal";
 import Project2 from "./project2-blog";
-import Project3 from "./project3-comingsoon";
+import AdaTools from "./project3-adatools";
 
 export default function Projects() {
   return (
@@ -15,7 +15,7 @@ export default function Projects() {
         <Project2 />
 
         {/* Project #3 - ComingSoon */}
-        <Project3 />
+        <AdaTools />
       </div>
     </div>
   );
