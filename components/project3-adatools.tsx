@@ -96,9 +96,9 @@ export default function AdaTools() {
               <AlertDialogCancel className="hover:cursor-pointer">
                 Fermer
               </AlertDialogCancel>
-              <AlertDialogAction disabled>
-                <Link href="" target="_blank">
-                  Bientôt en ligne!
+              <AlertDialogAction>
+                <Link href="https://adatools.dev" target="_blank">
+                  Voir le site
                 </Link>
               </AlertDialogAction>
             </AlertDialogFooter>
