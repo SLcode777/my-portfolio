@@ -17,25 +17,19 @@ export default function Hero() {
   const [totalCount, setTotalCount] = useState(0);
 
   const selectNineLastMonths = (contributions: Activity[]) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 9;
+    const today = new Date();
+    const nineMonthsAgo = new Date(today);
+    nineMonthsAgo.setMonth(today.getMonth() - 9);
 
     const filtered = contributions.filter((activity) => {
       const date = new Date(activity.date);
-      const monthOfDay = date.getMonth();
-
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
+      return date >= nineMonthsAgo && date <= today;
     });
 
     //calculer le total de contributions pour ma custom div (pour pouvoir faire un hover reveal sur le text)
     const total = filtered.reduce((sum, activity) => sum + activity.count, 0);
 
-    // Mise à jour asynchrone pour éviter l'erreur "Cannot update during render"
+    //mise à jour asynchrone pour éviter l'erreur "Cannot update during render"
     queueMicrotask(() => {
       setTotalCount(total);
     });
