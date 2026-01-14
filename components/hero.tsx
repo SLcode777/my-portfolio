@@ -46,7 +46,7 @@ export default function Hero() {
             <span className="text-sidebar-primary"> Stella</span> !
           </p>
           <p className="font-bold text-lg lg:text-2xl text-muted-foreground text-pretty">
-            Développeuse web & mobile en Freelance
+            Développeuse web & mobile
           </p>
           <div className="mt-4 max-w-fit group hover:blur-none blur-xs hidden lg:block ">
             <GitHubCalendar
