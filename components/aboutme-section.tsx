@@ -29,7 +29,7 @@ export default function AboutMe() {
               multiples facettes. Et puisque c&apos;est en construisant de vrais
               projets qu&apos;on apprend le mieux, je viens d&apos;achever, non
               sans fierté, mon premier projet d&apos;envergure, une véritable
-              application mobile, bientôt disponible sur le PlayStore !{" "}
+              application mobile, disponible sur le PlayStore !{" "}
             </p>
             <div className="flex justify-center mt-4">
               <Button

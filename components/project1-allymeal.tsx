@@ -90,15 +90,28 @@ export default function Project1() {
               </div>
             </AlertDialogHeader>
             <AlertDialogFooter className="mt-4">
-              <AlertDialogCancel className="hover:cursor-pointer">
-                Fermer
-              </AlertDialogCancel>
-              <AlertDialogAction>
-                <Link href={"https://allymeal.app"} target="_blank">
-                  Voir le site
-                </Link>
-              </AlertDialogAction>
+              <div className="flex flex-row w-full gap-2">
+                <AlertDialogCancel className="hover:cursor-pointer w-full ">
+                  Fermer
+                </AlertDialogCancel>
+                <AlertDialogAction className="w-full">
+                  <Link href={"https://allymeal.app"} target="_blank">
+                    Voir le site
+                  </Link>
+                </AlertDialogAction>
+              </div>
             </AlertDialogFooter>
+
+            <Button>
+              <Link
+                target="_blank"
+                href={
+                  "https://play.google.com/store/apps/details?id=com.allymeal.app"
+                }
+              >
+                Voir l&apos;appli
+              </Link>
+            </Button>
           </AlertDialogContent>
         </AlertDialog>
         <Badge variant="secondary" className="ml-auto">
