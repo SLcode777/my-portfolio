@@ -21,7 +21,7 @@ import {
   CardTitle,
 } from "./ui/card";
 
-export default function Project2() {
+export default function Blog() {
   return (
     <Card className="relative w-xs sm:w-sm  overflow-hidden pt-0">
       <div className="relative w-full h-48 overflow-hidden">

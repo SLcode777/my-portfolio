@@ -21,23 +21,23 @@ import {
   CardTitle,
 } from "./ui/card";
 
-export default function AllyMeal() {
+export default function Pexy() {
   return (
     <Card className="relative w-xs sm:w-sm overflow-hidden pt-0">
       <div className="relative w-full h-48 overflow-hidden">
         <Image
-          src="/img/allymeal.png"
+          src="/img/Pexy.webp"
           alt="Project1"
           fill
           className="object-cover"
         />
       </div>
       <CardHeader>
-        <CardTitle>AllyMeal</CardTitle>
+        <CardTitle>Pexy</CardTitle>
         <CardDescription className=" min-h-20">
-          Une application mobile Android (et iOS bientôt) qui permet de compter
-          les calories et autres macros de ses repas et recettes, et ce pour
-          plusieurs membres du foyer !
+          Une application mobile Android de Communication Alternative Augmentée
+          qui permet aux personnes non verbales de communiquer à travers la
+          méthode PECS.
         </CardDescription>
       </CardHeader>
       <CardFooter>
@@ -52,40 +52,43 @@ export default function AllyMeal() {
               </AlertDialogTitle>
               <AlertDialogDescription className="text-start">
                 <span>
-                  Ce projet est né d&apos;un besoin personnel. Dans mon foyer,
-                  il y a 3 diabétiques pour qui nous avons besoin de connaître
-                  les glucides à chaque repas et aucune application à ma
-                  connaissance permet de calculer les macros pour plusieurs
-                  personnes à la fois.
+                  Mon fils qui est autiste a eu le coeur brisé de voir que sa
+                  feature préférée dans son app de text-to-speech est devenue
+                  payante... J&apos;ai donc décidé de recoder une app similaire,
+                  tout en améliorant la localisation française qui était parfois
+                  hasardeuse, et en ajoutant quelques fonctionnalités
+                  supplémentaires.
                 </span>
               </AlertDialogDescription>
               <div className="mt-4 flex flex-col w-full">
                 <div className="text-sm font-semibold">Défis techniques</div>
                 <div className="text-xs text-muted-foreground mt-2 text-start">
-                  <span className="text-sidebar-primary">.Feature vocale</span>{" "}
-                  avancée qui permet de dicter à la volée les aliments servis
-                  pour plusieurs membres de la famille.
+                  <span className="text-sidebar-primary">
+                    .Coût de maintenance nulle :
+                  </span>{" "}
+                  afin de pouvoir mettre gratuitement l&apos;app à disposition
+                  de tous, j&apos;ai dû apprendre comment gérer des données
+                  personnalisées au sein même de l&apos;app.
+                </div>
+                <div className="text-xs text-muted-foreground mt-2 text-start">
+                  <span className="text-sidebar-primary">.Localisation :</span>{" "}
+                  j&apos;ai fait le choix d&apos;utiliser la librairie i18n pour
+                  permettre une localisation en français et en anglais.
                 </div>
                 <div className="text-xs text-muted-foreground mt-2 text-start">
                   <span className="text-sidebar-primary">
-                    .Recherche extensive
+                    .Plus de 800 pictogrammes :
                   </span>{" "}
-                  dans plusieurs bases de données internes et externes.
-                </div>
-                <div className="text-xs text-muted-foreground mt-2 text-start">
-                  <span className="text-sidebar-primary">
-                    .UX fluide et intuitive.
-                  </span>{" "}
-                  L&apos;application est encore dans sa phase MVP donc ce point
-                  est à implémenter mais c&apos;est effectivement un impératif
-                  selon moi.
+                  Je dois trouver une solution pour avoir 800 pictogrammes
+                  simples et cohérents. En attendant, j&apos;ai utilisé des
+                  emojis qui seront remplacés au fur et à mesure.
                 </div>
               </div>
               <div className="mt-4 flex flex-col w-full">
                 <div className="text-sm font-semibold">Stack technique</div>
                 <div className="text-xs text-muted-foreground mt-2 text-start">
-                  React Native, TypeScript, Expo Router, PostgreSQL, Prisma ORM,
-                  tRPC pour l&apos;essentiel.
+                  React Native, TypeScript, Expo Router, SQLite, Drizzle ORM,
+                  TTS natif pour l&apos;essentiel.
                 </div>
               </div>
             </AlertDialogHeader>
@@ -95,21 +98,16 @@ export default function AllyMeal() {
                   Fermer
                 </AlertDialogCancel>
                 <AlertDialogAction className="w-full">
-                  <Link href={"https://allymeal.app"} target="_blank">
+                  <Link href={"https://stellam.dev/pexy"} target="_blank">
                     Voir le site
                   </Link>
                 </AlertDialogAction>
               </div>
             </AlertDialogFooter>
 
-            <Button>
-              <Link
-                target="_blank"
-                href={
-                  "https://play.google.com/store/apps/details?id=com.allymeal.app"
-                }
-              >
-                Voir l&apos;appli
+            <Button disabled>
+              <Link target="_blank" href={""}>
+                Voir l&apos;appli (bientôt)
               </Link>
             </Button>
           </AlertDialogContent>

@@ -1,6 +1,7 @@
-import Project1 from "./project1-allymeal";
-import Project2 from "./project2-blog";
+import AllyMeal from "./project1-allymeal";
+import Blog from "./project2-blog";
 import AdaTools from "./project3-adatools";
+import Pexy from "./project4-pexy";
 
 export default function Projects() {
   return (
@@ -9,13 +10,17 @@ export default function Projects() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-fit gap-4 self-center">
         {/* Project #1 - AllyMeal */}
-        <Project1 />
+        <AllyMeal />
 
+        {/* Project #4 - Pexy */}
+        <Pexy />
+        
         {/* Project #2 - Blog */}
-        <Project2 />
+        <Blog />
 
-        {/* Project #3 - ComingSoon */}
+        {/* Project #3 - AdaTools */}
         <AdaTools />
+
       </div>
     </div>
   );
