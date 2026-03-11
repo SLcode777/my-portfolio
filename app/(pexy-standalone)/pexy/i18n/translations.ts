@@ -104,7 +104,8 @@ export const translations = {
         p2: "Cette application est",
         p2Bold: "gratuite et le restera toujours",
         p3: "L'objectif est de rendre la communication accessible à tous, sans barrière financière.",
-        p4: "Si vous le souhaitez, vous pouvez me soutenir par un don à hauteur de vos moyens sur Ko-fi",
+        p4: "Si vous le souhaitez, vous pouvez me soutenir par un don à hauteur de vos moyens sur Ko-fi.",
+        p5: "J'afficherai le nom ou le pseudo de tous mes généreux donateurs ci-dessous.",
         kofiAlt: "Soutenir sur Ko-fi",
       },
       cta: {
@@ -117,8 +118,7 @@ export const translations = {
     privacy: {
       meta: {
         title: "Politique de confidentialité - Pexy",
-        description:
-          "Politique de confidentialité de l'application Pexy (CAA)",
+        description: "Politique de confidentialité de l'application Pexy (CAA)",
       },
       backLink: "← Retour à Pexy",
       backLinkBottom: "← Retour à la page Pexy",
@@ -320,6 +320,7 @@ export const translations = {
         p2Bold: "free and will always remain so",
         p3: "The goal is to make communication accessible to everyone, without financial barriers.",
         p4: "If you wish, you can support me with a donation on Ko-fi",
+        p5: "I'll display the name or username of all my generous donors below.",
         kofiAlt: "Support me on Ko-fi",
       },
       cta: {

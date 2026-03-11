@@ -90,34 +90,6 @@ export function PexyPageContent() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-pexy-blizzard">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-pexy-stone mb-6">
-            {h.about.title}
-          </h2>
-          <p className="text-lg text-pexy-stone mb-4">{h.about.p1}</p>
-          <p className="text-lg text-pexy-stone mb-4">
-            {h.about.p2} <strong>{h.about.p2Bold}</strong>.
-          </p>
-          <p className="text-lg text-pexy-stone mb-4">{h.about.p3}</p>
-          <p className="text-lg text-pexy-stone mb-6">{h.about.p4}</p>
-          <a
-            href="https://ko-fi.com/slcode"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
-            <Image
-              src="/img/support_me_on_kofi_beige.webp"
-              alt={h.about.kofiAlt}
-              width={300}
-              height={50}
-            />
-          </a>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -133,6 +105,36 @@ export function PexyPageContent() {
           >
             {h.cta.button}
           </button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 bg-pexy-blizzard">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-pexy-stone mb-6">
+            {h.about.title}
+          </h2>
+          <p className="text-lg text-pexy-stone mb-4">{h.about.p1}</p>
+          <p className="text-lg text-pexy-stone mb-4">
+            {h.about.p2} <strong>{h.about.p2Bold}</strong>.
+          </p>
+          <p className="text-lg text-pexy-stone mb-4">{h.about.p3}</p>
+          <p className="text-lg text-pexy-stone mb-6">{h.about.p4}</p>
+          <p className="text-lg text-pexy-stone mb-6">{h.about.p5}</p>
+
+          <a
+            href="https://ko-fi.com/slcode"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Image
+              src="/img/support_me_on_kofi_beige.webp"
+              alt={h.about.kofiAlt}
+              width={300}
+              height={50}
+            />
+          </a>
         </div>
       </section>
     </div>
