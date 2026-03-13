@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { siteConfig } from "@/site.config";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -98,15 +99,18 @@ export default function Pexy() {
                   Fermer
                 </AlertDialogCancel>
                 <AlertDialogAction className="w-full">
-                  <Link href={"https://stellam.dev/pexy"} target="_blank">
+                  <Link
+                    href={siteConfig.links.pexy_website.url}
+                    target="_blank"
+                  >
                     Voir le site
                   </Link>
                 </AlertDialogAction>
               </div>
             </AlertDialogFooter>
 
-            <Button disabled>
-              <Link target="_blank" href={""}>
+            <Button>
+              <Link target="_blank" href={siteConfig.links.pexy_app.url}>
                 Voir l&apos;appli (bientôt)
               </Link>
             </Button>

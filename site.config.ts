@@ -20,6 +20,26 @@ export const siteConfig = {
       icon: "Mail",
     },
   },
+  links: {
+    allymeal_app: {
+      url: "https://play.google.com/store/apps/details?id=com.allymeal.app",
+    },
+    allymeal_website: {
+      url: "https://allymeal.app/",
+    },
+    pexy_app: {
+      url: "https://play.google.com/store/apps/details?id=com.lucysann.pexy",
+    },
+    pexy_website: {
+      url: "https://stellam.dev/pexy",
+    },
+    slcode_blog: {
+      url: "https://sl-code.dev",
+    },
+    adatools: {
+      url: "https://www.adatools.dev/",
+    },
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

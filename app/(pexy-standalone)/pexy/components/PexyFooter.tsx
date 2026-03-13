@@ -1,5 +1,6 @@
 "use client";
 
+import { siteConfig } from "@/site.config";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -47,9 +48,13 @@ export function PexyFooter() {
                 </Link>
               </li>
               <li>
-                <span className="text-pexy-stone/60 cursor-not-allowed">
+                <Link
+                  href={siteConfig.links.pexy_app.url}
+                  target="_blank"
+                  className="text-pexy-stone  hover:text-pexy-blue transition-colorsJ"
+                >
                   {f.links.googlePlay}
-                </span>
+                </Link>
               </li>
             </ul>
           </div>

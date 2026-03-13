@@ -20,6 +20,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import { siteConfig } from "@/site.config";
 
 export default function AdaTools() {
   return (
@@ -97,7 +98,7 @@ export default function AdaTools() {
                 Fermer
               </AlertDialogCancel>
               <AlertDialogAction>
-                <Link href="https://adatools.dev" target="_blank">
+                <Link href={siteConfig.links.adatools.url} target="_blank">
                   Voir le site
                 </Link>
               </AlertDialogAction>

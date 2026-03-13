@@ -50,7 +50,7 @@ export const translations = {
         h1Span: "avec Pexy",
         description:
           "Application de Communication Alternative Augmentée (CAA) gratuite pour les personnes avec troubles du langage.",
-        cta: "Bientôt sur Google Play",
+        cta: "Télécharger sur Google Play",
         privacyLink: "Politique de confidentialité",
       },
       features: {
@@ -112,7 +112,7 @@ export const translations = {
         title: "Prêt à commencer ?",
         description:
           "Téléchargez Pexy gratuitement sur Google Play et commencez à communiquer plus facilement dès aujourd'hui.",
-        button: "Bientôt disponible",
+        button: "Télécharger gratuitement",
       },
     },
     privacy: {
@@ -265,7 +265,7 @@ export const translations = {
         h1Span: "with Pexy",
         description:
           "Free Augmentative and Alternative Communication (AAC) app for people with speech disorders.",
-        cta: "Coming soon on Google Play",
+        cta: "Download on Google Play",
         privacyLink: "Privacy Policy",
       },
       features: {
@@ -327,7 +327,7 @@ export const translations = {
         title: "Ready to start?",
         description:
           "Download Pexy for free on Google Play and start communicating more easily today.",
-        button: "Coming soon",
+        button: "Free Download",
       },
     },
     privacy: {

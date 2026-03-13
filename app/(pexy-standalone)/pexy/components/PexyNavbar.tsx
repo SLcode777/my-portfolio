@@ -1,18 +1,16 @@
 "use client";
 
+import { siteConfig } from "@/site.config";
 import { Chewy, Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { BetaModal } from "./BetaModal";
 
 const inter = Inter({ subsets: ["latin"] });
 const chewy = Chewy({ weight: "400", subsets: ["latin"] });
 
 export function PexyNavbar() {
   const { lang, setLang, t } = useLanguage();
-  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
@@ -64,17 +62,18 @@ export function PexyNavbar() {
                 aria-label={
                   lang === "fr" ? "Switch to English" : "Passer en français"
                 }
-                title={lang === "fr" ? "Switch to English" : "Passer en français"}
+                title={
+                  lang === "fr" ? "Switch to English" : "Passer en français"
+                }
               >
                 {lang === "fr" ? "🇫🇷 FR -> 🇬🇧 EN" : "🇬🇧 EN -> 🇫🇷 FR"}
               </button>
 
-              <button
-                onClick={() => setModalOpen(true)}
-                className="bg-pexy-blue text-pexy-snow px-4 py-2 rounded-lg hover:bg-pexy-coral hover:text-pexy-stone transition-colors font-medium cursor-pointer"
-              >
-                {t.nav.download}
-              </button>
+              <Link target="_blank" href={siteConfig.links.pexy_app.url}>
+                <button className="bg-pexy-blue text-pexy-snow px-4 py-2 rounded-lg hover:bg-pexy-coral hover:text-pexy-stone transition-colors font-medium cursor-pointer">
+                  {t.nav.download}
+                </button>
+              </Link>
             </div>
 
             {/* Mobile: lang switcher + download */}
@@ -85,22 +84,21 @@ export function PexyNavbar() {
                 aria-label={
                   lang === "fr" ? "Switch to English" : "Passer en français"
                 }
-                title={lang === "fr" ? "Switch to English" : "Passer en français"}
+                title={
+                  lang === "fr" ? "Switch to English" : "Passer en français"
+                }
               >
                 {lang === "fr" ? "🇬🇧" : "🇫🇷"}
               </button>
-              <button
-                onClick={() => setModalOpen(true)}
-                className="bg-pexy-blue text-pexy-snow px-3 py-2 rounded-lg text-sm font-medium hover:bg-pexy-coral hover:text-pexy-stone transition-colors cursor-pointer"
-              >
-                {t.nav.download}
-              </button>
+              <Link target="_blank" href={siteConfig.links.pexy_app.url}>
+                <button className="bg-pexy-blue text-pexy-snow px-3 py-2 rounded-lg text-sm font-medium hover:bg-pexy-coral hover:text-pexy-stone transition-colors cursor-pointer">
+                  {t.nav.download}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-
-      <BetaModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { siteConfig } from "@/site.config";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -26,12 +27,11 @@ export function PexyPageContent() {
             {h.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => setModalOpen(true)}
-              className="bg-pexy-blue text-pexy-snow px-8 py-4 rounded-lg hover:bg-pexy-coral hover:text-pexy-stone transition-colors font-semibold text-lg inline-flex items-center justify-center cursor-pointer"
-            >
-              {h.hero.cta}
-            </button>
+            <Link target="_blank" href={siteConfig.links.pexy_app.url}>
+              <button className="bg-pexy-blue text-pexy-snow px-8 py-4 rounded-lg hover:bg-pexy-coral hover:text-pexy-stone transition-colors font-semibold text-lg inline-flex items-center justify-center cursor-pointer">
+                {h.hero.cta}
+              </button>
+            </Link>
             <Link
               href="/pexy/privacy-policy"
               className="bg-pexy-snow text-pexy-stone px-8 py-4 rounded-lg hover:bg-pexy-coral hover:border-pexy-coral transition-colors font-semibold text-lg border-2 border-pexy-blizzard/50 inline-flex items-center justify-center"
@@ -99,12 +99,11 @@ export function PexyPageContent() {
           <p className="text-lg text-balance text-pexy-stone mb-8">
             {h.cta.description}
           </p>
-          <button
-            onClick={() => setModalOpen(true)}
-            className="bg-pexy-blue text-white px-8 py-4 rounded-lg hover:bg-pexy-blue-hover transition-colors font-semibold text-lg inline-flex items-center justify-center cursor-pointer"
-          >
-            {h.cta.button}
-          </button>
+          <Link target="_blank" href={siteConfig.links.pexy_app.url}>
+            <button className="bg-pexy-blue text-white px-8 py-4 rounded-lg  hover:bg-pexy-coral hover:text-pexy-stone transition-colors font-semibold text-lg inline-flex items-center justify-center cursor-pointer">
+              {h.cta.button}
+            </button>
+          </Link>
         </div>
       </section>
 

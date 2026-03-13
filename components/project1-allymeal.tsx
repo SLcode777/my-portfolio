@@ -1,4 +1,6 @@
 import { Badge } from "@/components/ui/badge";
+import { siteConfig } from "@/site.config";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -95,7 +97,10 @@ export default function AllyMeal() {
                   Fermer
                 </AlertDialogCancel>
                 <AlertDialogAction className="w-full">
-                  <Link href={"https://allymeal.app"} target="_blank">
+                  <Link
+                    href={siteConfig.links.allymeal_website.url}
+                    target="_blank"
+                  >
                     Voir le site
                   </Link>
                 </AlertDialogAction>
@@ -103,12 +108,7 @@ export default function AllyMeal() {
             </AlertDialogFooter>
 
             <Button>
-              <Link
-                target="_blank"
-                href={
-                  "https://play.google.com/store/apps/details?id=com.allymeal.app"
-                }
-              >
+              <Link target="_blank" href={siteConfig.links.allymeal_app.url}>
                 Voir l&apos;appli
               </Link>
             </Button>

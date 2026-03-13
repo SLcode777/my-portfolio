@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { ThemeToggle } from "./theme-toggle";
-import { SocialLinks } from "./social-links";
 import { siteConfig } from "@/site.config";
+import Link from "next/link";
+import { SocialLinks } from "./social-links";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   return (

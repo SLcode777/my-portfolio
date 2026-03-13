@@ -20,6 +20,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import { siteConfig } from "@/site.config";
 
 export default function Blog() {
   return (
@@ -86,7 +87,7 @@ export default function Blog() {
                 Fermer
               </AlertDialogCancel>
               <AlertDialogAction>
-                <Link href={"https://sl-code.dev"} target="_blank">
+                <Link href={siteConfig.links.slcode_blog.url} target="_blank">
                   Voir le site
                 </Link>
               </AlertDialogAction>
