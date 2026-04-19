@@ -319,7 +319,7 @@ export const translations = {
         p2: "This app is",
         p2Bold: "free and will always remain so",
         p3: "The goal is to make communication accessible to everyone, without financial barriers.",
-        p4: "If you wish, you can support me with a donation on Ko-fi",
+        p4: "If you wish, you can support me with a donation on Ko-fi.",
         p5: "I'll display the name or username of all my generous donors below.",
         kofiAlt: "Support me on Ko-fi",
       },

@@ -3,6 +3,7 @@ import { Header } from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/site.config";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 
@@ -57,6 +58,7 @@ export default function PortfolioLayout({
           <Toaster />
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
