@@ -2,6 +2,7 @@ import AllyMeal from "./project1-allymeal";
 import Blog from "./project2-blog";
 import AdaTools from "./project3-adatools";
 import Pexy from "./project4-pexy";
+import GlucoFamily from "./project5-glucofamily";
 
 export default function Projects() {
   return (
@@ -14,13 +15,15 @@ export default function Projects() {
 
         {/* Project #4 - Pexy */}
         <Pexy />
-        
+
         {/* Project #2 - Blog */}
         <Blog />
 
         {/* Project #3 - AdaTools */}
         <AdaTools />
 
+        {/* Project #5 - GlucoFamily */}
+        <GlucoFamily />
       </div>
     </div>
   );

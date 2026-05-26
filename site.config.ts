@@ -39,6 +39,9 @@ export const siteConfig = {
     adatools: {
       url: "https://www.adatools.dev/",
     },
+    glucofamily: {
+      url: "https://github.com/SLcode777/gluco-family",
+    },
   },
 } as const;
 
