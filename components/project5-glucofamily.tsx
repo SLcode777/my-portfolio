@@ -90,11 +90,22 @@ export default function GlucoFamily() {
                 Fermer
               </AlertDialogCancel>
               <AlertDialogAction>
-                <Link href={siteConfig.links.glucofamily.url} target="_blank">
-                  Voir le site
+                <Link
+                  href={siteConfig.links.glucofamily_github.url}
+                  target="_blank"
+                >
+                  Voir le github
                 </Link>
               </AlertDialogAction>
             </AlertDialogFooter>
+            <Button>
+              <Link
+                target="_blank"
+                href={siteConfig.links.glucofamily_webpage.url}
+              >
+                Voir la page d&apos;installation
+              </Link>
+            </Button>
           </AlertDialogContent>
         </AlertDialog>
         <Badge variant="secondary" className="ml-auto">
