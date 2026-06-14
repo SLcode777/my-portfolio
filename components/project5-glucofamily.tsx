@@ -25,12 +25,13 @@ import { siteConfig } from "@/site.config";
 export default function GlucoFamily() {
   return (
     <Card className="relative w-xs sm:w-sm overflow-hidden pt-0">
-      <div className="relative w-full h-48 overflow-hidden">
+      <div className="relative w-full h-48 overflow-hidden flex justify-center bg-black">
         <Image
-          src="/img/glucofamily.webp"
+          src="/img/glucofamily2.webp"
           alt="Project5"
-          fill
-          className="object-cover"
+          height={300}
+          width={300}
+          className="object-cover self-center"
         />
       </div>
       <CardHeader>
